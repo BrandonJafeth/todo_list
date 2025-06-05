@@ -140,7 +140,7 @@ class _TaskListScreenState extends State<TaskListScreen> {
                       _buildAddTaskInput(),
                       const SizedBox(height: AppDimensions.largePadding),                      
                       TaskSectionWidget(
-                        title: 'Tasks to do - ${_pendingTasks.length}',
+                        title: 'Tasks to do : ${_pendingTasks.length}',
                         tasks: _pendingTasks,
                         onToggleComplete: _toggleTaskStatus,
                         onDelete: _deleteTask,
@@ -150,7 +150,7 @@ class _TaskListScreenState extends State<TaskListScreen> {
 
                       // TAREAS COMPLETADAS
                       TaskSectionWidget(
-                        title: 'Done - ${_completedTasks.length}',
+                        title: 'Done : ${_completedTasks.length}',
                         tasks: _completedTasks,
                         onToggleComplete: _toggleTaskStatus,
                         onDelete: _deleteTask,

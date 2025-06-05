@@ -47,7 +47,7 @@ class AppTextStyles {
     color: AppColors.secondaryText,
   );
   
-  // Estilos para estadísticas
+
   static const TextStyle statsText = TextStyle(
     fontSize: 16,
     fontWeight: FontWeight.w400,

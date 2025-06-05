@@ -45,11 +45,11 @@ class TaskItem extends StatelessWidget {
             padding: const EdgeInsets.all(AppDimensions.taskItemPadding),
             child: Row(
               children: [
-                // Checkbox para completar tarea
+           
                 _buildCheckbox(),
                 const SizedBox(width: AppDimensions.mediumPadding),
                 
-                // Contenido de la tarea
+           
                 Expanded(
                   child: _buildTaskContent(screenWidth),
                 ),

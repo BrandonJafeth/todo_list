@@ -3,7 +3,6 @@ import '../../models/task.dart';
 
 class TaskValidators {
   /// Verifica si ya existe una tarea con el mismo título
-  /// (pendiente o completada), ignorando mayúsculas/minúsculas.
   static bool isDuplicateTitle(
     String title,
     List<Task> pendingTasks,
@@ -17,8 +16,7 @@ class TaskValidators {
     return inPending || inCompleted;
   }
 
-  /// Valida el título. Devuelve `null` si todo OK,
-  /// o un mensaje de error si no cumple las reglas.
+  /// Valida el título. Devuelve `null` si todo OK
   static String? validateTitle(
     String? value,
     List<Task> pendingTasks,
@@ -48,8 +46,7 @@ class TaskValidators {
     return null;
   }
 
-  /// Valida la descripción. Devuelve `null` si todo OK,
-  /// o un mensaje de error si no cumple las reglas.
+  /// Valida la descripción. Devuelve `null` si todo OK.
   static String? validateDescription(String? value) {
     final txt = value?.trim() ?? '';
     if (txt.isEmpty) return null; // La descripción es opcional

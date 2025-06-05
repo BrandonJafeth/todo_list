@@ -138,7 +138,7 @@ class _TaskListScreenState extends State<TaskListScreen> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       _buildAddTaskInput(),
-                      const SizedBox(height: AppDimensions.largePadding),                      // TAREAS PENDIENTES
+                      const SizedBox(height: AppDimensions.largePadding),                      
                       TaskSectionWidget(
                         title: 'Tasks to do - ${_pendingTasks.length}',
                         tasks: _pendingTasks,
@@ -176,7 +176,7 @@ class _TaskListScreenState extends State<TaskListScreen> {
         color: Colors.transparent,
         borderRadius: BorderRadius.circular(AppDimensions.mediumRadius),
         border: Border.all(
-            color: AppColors.secondaryText.withAlpha(77)), // 0.3 * 255 ≈ 77
+            color: AppColors.secondaryText.withAlpha(77)), 
       ),
       child: TextField(
         controller: TextEditingController(),

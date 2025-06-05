@@ -41,7 +41,6 @@ class AddTaskWidget extends StatelessWidget {
             ),
             child: Row(
               children: [
-                // Botón circular de agregar
                 Container(
                   width: 40,
                   height: 40,

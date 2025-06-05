@@ -96,7 +96,7 @@ class TaskDialog {
                   controller: descriptionController,
                   style: AppTextStyles.body,
                   validator: TaskValidators.validateDescription,
-                  maxLines: 3,
+                  maxLines: 1,
                   decoration: const InputDecoration(
                     labelText: 'Descripción (opcional)',
                     labelStyle: TextStyle(color: AppColors.secondaryText),
